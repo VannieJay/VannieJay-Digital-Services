@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --radius-bento: 32px;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@utility font-bento-hero {
+  @apply font-black tracking-tighter italic leading-[0.9];
+}
+
+@utility bento-card {
+  @apply rounded-[--radius-bento] border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300;
+}
